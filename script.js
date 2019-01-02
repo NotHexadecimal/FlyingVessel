@@ -29,10 +29,12 @@ chrome.storage.local.get(['theme'], function(result){
 	.activity-feed .activity-feed-period .feed-list{color: #fff} \
 	.tabs-wrapper .nav{background: #000; box-shadow: inset 0 -1px 0 #404040} \
 	.tabs-wrapper .nav .nav-item.active{color: #00afec} \
+	.video-player-wrapper{background: #000} \
 	.floaty{padding: 10px; background: #555; position: fixed; bottom: 30px; right: 30px; color: #000; cursor: pointer; -webkit-user-select: none; transition: .3s;} \
 	.floaty:hover{background: #888;}";
 	else
-	style.innerHTML = ".floaty{padding: 10px; background: #ccc; position: fixed; bottom: 30px; right: 30px; color: #000; cursor: pointer; -webkit-user-select: none; transition: .3s;} \
+	style.innerHTML = ".video-player-wrapper{background: #000} \
+	.floaty{padding: 10px; background: #ccc; position: fixed; bottom: 30px; right: 30px; color: #000; cursor: pointer; -webkit-user-select: none; transition: .3s;} \
 	.floaty:hover{background: #888;}";
 	document.head.appendChild(style);
 })
